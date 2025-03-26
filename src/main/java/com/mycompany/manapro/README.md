@@ -1,48 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - MANAPRO</title>
-</head>
-<body>
-    <h1>Mini Proyek Pemrograman Berorientasi Obyek 2</h1>
+# Mini Proyek Pemrograman Berorientasi Obyek 2
 
-    <ul>
-        <li><strong>Mata Kuliah:</strong> Pemrograman Berorientasi Obyek 2</li>
-        <li><strong>Dosen Pengampu:</strong> <a href="https://github.com/Muhammad-Ikhwan-Fathulloh">Muhammad Ikhwan Fathulloh</a></li>
-    </ul>
+## Informasi Proyek
 
-    <h2>Kelompok</h2>
-    <ul>
-        <li><strong>Kelompok:</strong> 1</li>
-        <li><strong>Proyek:</strong> Sistem Manajemen Produk</li>
-        <li><strong>Dibuat oleh:</strong></li>
-        <ul>
-            <li>Nama: <a href="https://github.com/BayuAjiPrayoga">Bayu Aji Prayoga</a></li>
-            <li>NPM: 23552011194</li>
-            <li>Kelas: TIF RP-23 CNS A</li>
-        </ul>
-    </ul>
+- **Mata Kuliah:** Pemrograman Berorientasi Obyek 2  
+- **Dosen Pengampu:** [Muhammad Ikhwan Fathulloh](https://github.com/Muhammad-Ikhwan-Fathulloh)  
+- **Kelompok:** 1  
+- **Proyek:** Sistem Manajemen Produk  
+- **Dibuat oleh:**  
+  - **Nama:** [Bayu Aji Prayoga](https://github.com/BayuAjiPrayoga)  
+  - **NPM:** 23552011194  
+  - **Kelas:** TIF RP-23 CNS A  
 
-    <h2>Judul Studi Kasus</h2>
-    <p>ManaPro</p>
+---
 
-    <h2>Penjelasan Studi Kasus</h2>
-    <p>Aplikasi ini digunakan untuk mempermudah proses pengelolaan produk dan transaksi dalam sebuah sistem kasir sederhana. Aplikasi ini memiliki fitur untuk menambah, melihat, memperbarui, menghapus produk, mencari produk berdasarkan nama, memproses transaksi, dan melihat riwayat transaksi. Aplikasi ini berbasis Java dengan antarmuka berbasis teks.</p>
+## Judul Studi Kasus
 
-    <h2>Penjelasan 4 Pilar OOP dalam Studi Kasus</h2>
+**Manajemen Produk (ManaPro)**  
 
-    <h3>1. Inheritance</h3>
-    <p>Inheritance memungkinkan suatu kelas untuk mewarisi atribut dan metode dari kelas lain. Dalam kode ini, inheritance tidak diterapkan karena setiap kelas memiliki tanggung jawab yang spesifik dan tidak ada hierarki yang jelas.</p>
+---
 
-    <h3>2. Encapsulation</h3>
-    <p>Encapsulation diterapkan dengan baik dalam proyek ini. Atribut di kelas <code>Product</code> bersifat <code>private</code> dan hanya dapat diakses melalui metode getter dan setter. Hal ini memastikan bahwa data dalam objek dilindungi dari akses langsung dari luar kelas.</p>
+## Penjelasan Studi Kasus
 
-    <h4>Implementasi Encapsulation dalam Kode:</h4>
-    <pre>
+Aplikasi ini digunakan untuk mempermudah proses pengelolaan produk dan transaksi dalam sebuah sistem kasir sederhana. Aplikasi ini memiliki fitur untuk:  
+- Menambah, melihat, memperbarui, dan menghapus produk  
+- Mencari produk berdasarkan nama  
+- Memproses transaksi  
+- Melihat riwayat transaksi  
 
-<code>
+Aplikasi ini berbasis **Java** dengan antarmuka berbasis teks.
+
+---
+
+## Penjelasan 4 Pilar OOP dalam Studi Kasus
+
+### 1. Inheritance
+Inheritance memungkinkan suatu kelas untuk mewarisi atribut dan metode dari kelas lain. Dalam kode ini, inheritance tidak diterapkan karena setiap kelas memiliki tanggung jawab yang spesifik dan tidak ada hierarki yang jelas.
+
+---
+
+### 2. Encapsulation
+Encapsulation diterapkan dengan baik dalam proyek ini. Atribut di kelas `Product` bersifat `private` dan hanya dapat diakses melalui metode getter dan setter. Hal ini memastikan bahwa data dalam objek dilindungi dari akses langsung dari luar kelas.
+
+#### Implementasi Encapsulation dalam Kode:
+```java
 public class Product {
     private int id;
     private String name;
@@ -68,19 +68,16 @@ public class Product {
     public void setPrice(double price) { this.price = price; }
     public int getStock() { return stock; }
     public void setStock(int stock) { this.stock = stock; }
-
 }
-</code>
+```
 
-</pre>
+---
 
-    <h3>3. Polymorphism</h3>
-    <p>Polymorphism diterapkan melalui constructor overloading di kelas <code>Product</code> dan overriding metode <code>toString()</code> untuk memberikan representasi string yang lebih informatif.</p>
+### 3. Polymorphism
+Polymorphism diterapkan melalui constructor overloading di kelas `Product` dan overriding metode `toString()` untuk memberikan representasi string yang lebih informatif.
 
-    <h4>Implementasi Polymorphism dalam Kode:</h4>
-    <pre>
-
-<code>
+#### Implementasi Polymorphism dalam Kode:
+```java
 public class Product {
     // Constructor Overloading
     public Product(int id, String name, String description, double price, int stock) { ... }
@@ -97,19 +94,16 @@ public class Product {
                 ", stock=" + stock +
                 '}';
     }
-
 }
-</code>
+```
 
-</pre>
+---
 
-    <h3>4. Abstraction</h3>
-    <p>Abstraction diterapkan melalui kelas <code>ProductOperations</code>, yang menyembunyikan detail implementasi query SQL dari pengguna aplikasi. Pengguna hanya perlu memanggil metode seperti <code>addProduct()</code>, <code>getProducts()</code>, dll., tanpa mengetahui bagaimana query SQL dijalankan.</p>
+### 4. Abstraction
+Abstraction diterapkan melalui kelas `ProductOperations`, yang menyembunyikan detail implementasi query SQL dari pengguna aplikasi. Pengguna hanya perlu memanggil metode seperti `addProduct()`, `getProducts()`, dll., tanpa mengetahui bagaimana query SQL dijalankan.
 
-    <h4>Implementasi Abstraction dalam Kode:</h4>
-    <pre>
-
-<code>
+#### Implementasi Abstraction dalam Kode:
+```java
 public class ProductOperations {
     public void addProduct(Product product) {
         String query = "INSERT INTO products (name, description, price, stock) VALUES (?, ?, ?, ?)";
@@ -124,15 +118,14 @@ public class ProductOperations {
         }
     }
 }
-</code>
-    </pre>
+```
 
-    <h2>Struktur Tabel Aplikasi</h2>
+---
 
-    <h3>Tabel <code>products</code></h3>
-    <pre>
+## Struktur Tabel Aplikasi
 
-<code>
+### Tabel `products`
+```sql
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -141,13 +134,10 @@ CREATE TABLE products (
     stock INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-</code>
-    </pre>
+```
 
-    <h3>Tabel <code>transactions</code></h3>
-    <pre>
-
-<code>
+### Tabel `transactions`
+```sql
 CREATE TABLE transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
@@ -156,76 +146,62 @@ CREATE TABLE transactions (
     transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
-</code>
-    </pre>
+```
 
-    <h2>Tampilan Aplikasi</h2>
+---
 
-    <h3>Menu Utama</h3>
-    <pre>
+## Tampilan Aplikasi
 
-# <code>
+### Menu Utama
+```
+=============================
+<<<Product Management Menu>>>
+=============================
+1. Add Product
+2. View All Products
+3. Update Product
+4. Delete Product
+5. Search Product by Name
+6. Process Transaction
+7. View Transaction History
+=============================
+0. Exit
+```
 
-# <<<Product Management Menu>>>
+### Contoh Output
 
-1.  Add Product
-2.  View All Products
-3.  Update Product
-4.  Delete Product
-5.  Search Product by Name
-6.  Process Transaction
-7.  # View Transaction History
-8.  Exit
-    </code>
-    </pre>
-
-        <h3>Contoh Output</h3>
-        <h4>Menambah Produk</h4>
-        <pre>
-
-<code>
+#### Menambah Produk
+```
 Enter product name: Pensil
 Enter product description: Pensil kayu berkualitas tinggi
 Enter product price: 2000
 Enter product stock: 100
 Product added successfully!
-</code>
-    </pre>
+```
 
-    <h4>Melihat Semua Produk</h4>
-    <pre>
-
-<code>
+#### Melihat Semua Produk
+```
 All Products:
 Product{id=1, name='Pensil', description='Pensil kayu berkualitas tinggi', price=2000.0, stock=100}
-</code>
-    </pre>
+```
 
-    <h4>Memproses Transaksi</h4>
-    <pre>
-
-<code>
+#### Memproses Transaksi
+```
 Enter Product ID for transaction: 1
 Enter quantity to purchase: 5
 Transaction successful!
 Total Price: 10000.0
-</code>
-    </pre>
+```
 
-    <h4>Melihat Riwayat Transaksi</h4>
-    <pre>
-
-<code>
+#### Melihat Riwayat Transaksi
+```
 Transaction History:
 Transaction ID: 1, Product: Pensil, Quantity: 5, Total Price: 10000.0, Date: 2025-03-26 10:00:00
-</code>
-    </pre>
+```
 
-    <h2>Demo Proyek</h2>
-    <ul>
-        <li>Github: <a href="">[Github]</a></li>
-        <li>Youtube: <a href="">[Youtube]</a></li>
-    </ul>
+---
 
-</body>
-</html>
+## Demo Proyek
+
+- **Github:** [Link Github](#)  
+- **Youtube:** [Link Youtube](#)
