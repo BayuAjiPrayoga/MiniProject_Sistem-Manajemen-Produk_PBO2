@@ -4,7 +4,6 @@
 
 - **Mata Kuliah:** Pemrograman Berorientasi Obyek 2  
 - **Dosen Pengampu:** [Muhammad Ikhwan Fathulloh](https://github.com/Muhammad-Ikhwan-Fathulloh)  
-- **Kelompok:** 1  
 - **Proyek:** Sistem Manajemen Produk  
 - **Dibuat oleh:**  
   - **Nama:** [Bayu Aji Prayoga](https://github.com/BayuAjiPrayoga)  
